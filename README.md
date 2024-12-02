@@ -23,8 +23,8 @@ The implementation methodology is illustrated in the following diagram：
     <td><img src="./figures/0000001907562.jpg" width="400"></td>
   </tr>
 </table>
-## Links
 
+### Links
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](https://arxiv.org/abs/2411.18270)
 
 For a detailed exposition of our methodology, experimental results, and in-depth analysis, please refer to our paper.
