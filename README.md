@@ -34,5 +34,8 @@ For a given raw image, it is first processed using Writeline.py to generate a gr
 
 # Visualization
 The specific usage process and the results of the visualization are illustrated in the following figure.
-![Grid Implementation]("./figures/example.png")
+
+<div align="center">
+  <img src="./figures/example.png" alt="Grid Implementation">
+</div>
 
