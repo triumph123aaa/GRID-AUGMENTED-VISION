@@ -29,13 +29,37 @@ The implementation methodology is illustrated in the following diagram：
 
 For a detailed exposition of our methodology, experimental results, and in-depth analysis, please refer to our paper.
 
-# Quick Start
-For a given raw image, it is first processed using Writeline.py to generate a grid-annotated image. Subsequently, after interaction with the large model, bounding box visualization is achieved through the Visualization.py script, enabling the graphical representation of object boundaries.
+## Quick Start
+For a given raw image, it is first processed using `Writeline.py` to generate a grid-annotated image. Subsequently, after interaction with the large model, bounding box visualization is achieved through the `Visualization.py` script, enabling the graphical representation of object boundaries.
 
-# Visualization
+## Visualization
 The specific usage process and the results of the visualization are illustrated in the following figure.
 
 <div align="center">
   <img src="./figures/example.png" alt="Grid Implementation">
 </div>
 
+## Results
+Our experimental results, as shown in Table 1, reveal several key findings:
+ - Configuration Performance: The 9 × 9 black grid with 0.3 transparency demonstrated promising results,
+ achieving an IoU of 0.56 and GIoU of 0.53, showing improvement over the baseline performance (IoU: 0.27,
+ GIoU: 0.18) without grid overlay.
+ - Grid Color Impact: Through our experiments, black grids tended to show better performance compared to
+ white grids across various configurations. This might be attributed to the better contrast black grids provide
+ against typical image contents.
+ - Transparency Effects: The level of transparency appeared to influence localization accuracy. Moderate
+ transparency (0.3) typically yielded better results compared to very transparent (0.1) or more opaque (0.5-1.0)
+ settings, suggesting a potential trade-off between grid visibility and image content preservation.
+<div align="center">
+  <img src="./result/re.png" alt="Grid Implementation1">
+</div>
+
+## Citation
+```bibtex
+@article{chae2024grid,
+  title={Grid-augumented vision: A simple yet effective approach for enhanced spatial understanding in multi-modal agents},
+  author={Chae, Joongwon and Wang, Zhenyu and Qin, Peiwu},
+  journal={arXiv preprint arXiv:2411.18270},
+  year={2024}
+}
+```
