@@ -28,3 +28,11 @@ The implementation methodology is illustrated in the following diagram：
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](https://arxiv.org/abs/2411.18270)
 
 For a detailed exposition of our methodology, experimental results, and in-depth analysis, please refer to our paper.
+
+# Quick Start
+For a given raw image, it is first processed using Writeline.py to generate a grid-annotated image. Subsequently, after interaction with the large model, bounding box visualization is achieved through the Visualization.py script, enabling the graphical representation of object boundaries.
+
+# Visualization
+The specific usage process and the results of the visualization are illustrated in the following figure.
+![Grid Implementation]("./figures/example.jpg")
+
